@@ -5,13 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class CrashDetector : MonoBehaviour
 {
-    [SerializeField] ParticleSystem deathParticles;
     [SerializeField] float delayTime = .5f;
+    [SerializeField] ParticleSystem deathParticles;
+    [SerializeField] AudioClip crashSFX;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Ground")
         {
             deathParticles.Play();
+            GetComponent<AudioSource>().PlayOneShot(crashSFX);
             Invoke("ReloadScene", delayTime);
         }
     }

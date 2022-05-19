@@ -12,6 +12,7 @@ public class FinishLine : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             finishParticles.Play();
+            GetComponent<AudioSource>().Play();
             Invoke("ReloadScene", delayTime);
         }
     }

@@ -5,7 +5,6 @@ using UnityEngine;
 public class DustTrail : MonoBehaviour
 {
     [SerializeField] ParticleSystem snowTrailEffect;
-
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Ground")

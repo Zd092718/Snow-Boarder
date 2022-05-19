@@ -5225,8 +5225,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22cf33bb5fc80d9409cec723321ff17e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathParticles: {fileID: 1895711835}
   delayTime: 1
+  deathParticles: {fileID: 1895711835}
+  crashSFX: {fileID: 8300000, guid: 1d403c3eab8763841aa60bf1903ff968, type: 3}
 --- !u!114 &206885557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5240,6 +5241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   snowTrailEffect: {fileID: 134203091}
+  snowCrunchSFX: {fileID: 8300000, guid: e0e0f4198c7fedc4ea39f37b25bbb3c5, type: 3}
 --- !u!82 &206885558
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5250,7 +5252,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1d403c3eab8763841aa60bf1903ff968, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.505
   m_Pitch: 1
